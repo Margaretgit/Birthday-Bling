@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday {{ name }}</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+    <div class="container birthday-card">
+
+        <div class="emoji">
+            🎉
+        </div>
+
+        <h1>
+            Happy Birthday!
+        </h1>
+
+        <h2>
+            Dear {{ name }} 💖
+        </h2>
+
+        <div class="cake">
+            🎂
+        </div>
+
+        <p>
+            Congratulations on your
+            <strong>{{ age }}th birthday!</strong>
+        </p>
+
+        <p>
+            {{ message }}
+        </p>
+
+        <div class="surprise">
+
+            🎁
+
+            <p>
+                May your new year be filled with
+                happiness, success and beautiful memories!
+            </p>
+
+        </div>
+
+        <p>
+            Made with ❤️ using Birthday Bling
+        </p>
+
+        <button onclick="window.print()">
+            🖨️ Print Card
+        </button>
+
+    </div>
+
+</body>
+
+</html>
